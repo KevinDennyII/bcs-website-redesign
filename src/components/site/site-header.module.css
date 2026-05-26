@@ -1,0 +1,67 @@
+.header {
+  border-bottom: 1px solid var(--color-border-muted);
+  background: var(--color-surface-card);
+}
+
+.inner {
+  min-height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-12);
+}
+
+.brand {
+  text-decoration: none;
+  display: grid;
+  gap: var(--space-2);
+}
+
+.brandName {
+  font-weight: 700;
+  font-size: var(--font-size-500);
+  line-height: var(--line-height-tight);
+}
+
+.brandTagline {
+  font-size: var(--font-size-300);
+  color: var(--color-text-secondary);
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: var(--space-8);
+}
+
+.navLink {
+  font-size: var(--font-size-300);
+  text-decoration: none;
+  color: var(--color-text-secondary);
+  padding: var(--space-4) var(--space-2);
+  border-bottom: 2px solid transparent;
+}
+
+.navLink:hover {
+  color: var(--color-text-primary);
+}
+
+.activeLink {
+  color: var(--color-text-primary);
+  border-bottom-color: var(--color-action-primary);
+}
+
+@media (max-width: 62rem) {
+  .inner {
+    min-height: auto;
+    padding-block: var(--space-8);
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}

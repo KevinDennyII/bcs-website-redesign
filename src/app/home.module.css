@@ -1,0 +1,35 @@
+.page {
+  display: grid;
+  gap: var(--space-24);
+}
+
+.hero {
+  display: grid;
+  gap: var(--space-8);
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-300);
+  font-weight: 600;
+}
+
+.hero h1 {
+  font-size: var(--font-size-700);
+  line-height: var(--line-height-tight);
+  max-width: 30ch;
+  text-wrap: balance;
+}
+
+.lead {
+  max-width: 68ch;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-500);
+}
+
+.heroImage {
+  border: 1px solid var(--color-border-muted);
+  border-radius: var(--radius-lg);
+}
