@@ -11,6 +11,11 @@ type SiteFrameProps = {
 
 export function SiteFrame({ children }: SiteFrameProps) {
   const pathname = usePathname();
+  const isV2Experience = pathname.startsWith("/v2");
+
+  if (isV2Experience) {
+    return <>{children}</>;
+  }
 
   return (
     <>

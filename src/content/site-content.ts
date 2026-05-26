@@ -76,6 +76,7 @@ export type CredentialRecord = {
 
 export const primaryNav: NavItem[] = [
   { href: "/", label: "Home" },
+  { href: "/v2", label: "V2 Prototype" },
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/commercial", label: "Commercial" },
